@@ -1,0 +1,43 @@
+@import url(reset.css);
+.container {
+  width: 90%;
+  max-width: 700px;
+  min-width: 290px;
+  padding: 3%;
+  margin: auto;
+  background-color: antiquewhite;
+}
+.card li {
+  display: flex;
+  gap: 2%;
+  align-items: center;
+  margin-bottom: 2%;
+  background-color:aliceblue;
+}
+.card li:last-child {
+  margin-bottom: 0;
+}
+/* 이미지영역 */
+.img-box,
+.card-text {
+  width: 50%;
+}
+@media (max-width:768px){
+    .card-text h3{
+        font-size: 16px;
+    }
+    .card-text p{
+        font-size: 14px;
+    }
+}
+@media (max-width:480px){
+    .card li{
+        flex-direction: column;
+    }
+    .img-box,.card-text{
+        width: 100%;
+    }
+    .card-text{
+        padding: 2%;
+    }
+}
