@@ -1,0 +1,42 @@
+@import url(reset.css);
+
+.container{
+    width: 90%;
+    max-width: 700px;
+    min-width: 290px;
+    margin: auto;
+    padding: 3%;
+    background-color: antiquewhite;
+}
+.card li{
+    display: flex;
+    align-items:center;
+    gap: 2%;
+    margin-bottom: 2%;
+    background-color: aliceblue;
+}
+.img-box,.card-text{
+    width: 50%;
+}
+.card-text:last-child{
+    margin-bottom: 0;
+}
+@media (max-width:768px){
+    .card-text h1{
+        font-size: 16px;
+    }
+    .card-text p{
+        font-size: 14px;
+    }
+}
+@media (max-width:480px){
+    .card li{
+        flex-direction: column;
+    }
+    .img-box,.card-text{
+        width: 100%;
+    }
+    .card-text{
+        padding: 2%;
+    }
+}
